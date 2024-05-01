@@ -1,6 +1,6 @@
 import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
-import BannerImage from "../Assets/home-banner-image.png";
+import BannerImage from "../Assets/phone-shadow.png";
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -14,17 +14,17 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-          Hide in Sight, Safe by Design 
+            {"The Best Place to Hide is in Plain Sight".toUpperCase()}
           </h1>
           <p className="primary-text">
-          Empowering apps to protect user privacy with seamless security integration
+            Secure and disguise your app with our innovative camouflage technology, accessible only to your end user.
           </p>
-          <button className="secondary-button">
-            Order Now <FiArrowRight />{" "}
-          </button>
+          <a href="mailto:tal.sharon@outlook.co.il" className="secondary-button">
+            Contact Us <FiArrowRight />{" "}
+          </a>
         </div>
         <div className="home-image-section">
-          <img src={BannerImage} alt="" />
+          <img src={BannerImage} alt="" style={{ width: "75%" }} />
         </div>
       </div>
     </div>
